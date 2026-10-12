@@ -1,0 +1,36 @@
+{
+  "heroes": [
+    {
+      "id": 130,
+      "name": "Obsidia",
+      "slug": "obsidia",
+      "roles": ["Marksman"],
+      "lanes": ["Gold Lane"],
+      "status": "locked"
+    },
+    {
+      "id": 131,
+      "name": "Sora",
+      "slug": "sora",
+      "roles": ["Fighter", "Assassin"],
+      "lanes": ["EXP Lane"],
+      "status": "locked"
+    },
+    {
+      "id": 132,
+      "name": "Marcel",
+      "slug": "marcel",
+      "roles": ["Support"],
+      "lanes": ["Roam"],
+      "status": "locked"
+    },
+    {
+      "id": 133,
+      "name": "Hirara",
+      "slug": "hirara",
+      "roles": ["Assassin"],
+      "lanes": ["Jungle"],
+      "status": "locked"
+    }
+  ]
+}

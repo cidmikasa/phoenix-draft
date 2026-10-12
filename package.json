@@ -1,0 +1,63 @@
+{
+  "name": "phoenix-draft",
+  "version": "0.9.0",
+  "description": "Phoenix Draft — MLBB tournament draft tool",
+  "main": "main.js",
+  "author": "Cid",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux",
+    "update-heroes": "node scripts/update-heroes.js"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.phoenixdraft.app",
+    "productName": "Phoenix Draft",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "display.html",
+      "control.html",
+      "js/**/*",
+      "styles/**/*",
+      "assets/**/*",
+      "heroes.json",
+      "heroes-version.json",
+      "!node_modules/**/*",
+      "!scripts/**/*",
+      "!dist/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "build/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "build/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "allowScripts": {
+    "electron@33.4.11": true
+  }
+}

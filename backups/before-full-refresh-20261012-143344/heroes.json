@@ -1,0 +1,2177 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-08-21T18:36:12.833Z",
+  "heroCount": 133,
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Miya",
+      "slug": "miya",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/1-miya-round.png",
+        "rectangle": "./images/1-miya.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 2,
+      "name": "Balmond",
+      "slug": "balmond",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Jungle",
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/2-balmond-round.png",
+        "rectangle": "./images/2-balmond.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 3,
+      "name": "Saber",
+      "slug": "saber",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle",
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/3-saber-round.png",
+        "rectangle": "./images/3-saber.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 4,
+      "name": "Alice",
+      "slug": "alice",
+      "roles": [
+        "Mage",
+        "Tank"
+      ],
+      "lanes": [
+        "Exp Lane",
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/4-alice-round.png",
+        "rectangle": "./images/4-alice.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 5,
+      "name": "Nana",
+      "slug": "nana",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/5-nana-round.png",
+        "rectangle": "./images/5-nana.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 6,
+      "name": "Tigreal",
+      "slug": "tigreal",
+      "roles": [
+        "Tank"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/6-tigreal-round.png",
+        "rectangle": "./images/6-tigreal.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 7,
+      "name": "Alucard",
+      "slug": "alucard",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/7-alucard-round.png",
+        "rectangle": "./images/7-alucard.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 8,
+      "name": "Karina",
+      "slug": "karina",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/8-karina-round.png",
+        "rectangle": "./images/8-karina.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 9,
+      "name": "Akai",
+      "slug": "akai",
+      "roles": [
+        "Tank"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/9-akai-round.png",
+        "rectangle": "./images/9-akai.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 10,
+      "name": "Franco",
+      "slug": "franco",
+      "roles": [
+        "Tank"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/10-franco-round.png",
+        "rectangle": "./images/10-franco.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 11,
+      "name": "Bane",
+      "slug": "bane",
+      "roles": [
+        "Fighter",
+        "Mage"
+      ],
+      "lanes": [
+        "Jungle",
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/11-bane-round.png",
+        "rectangle": "./images/11-bane.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 12,
+      "name": "Bruno",
+      "slug": "bruno",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/12-bruno-round.png",
+        "rectangle": "./images/12-bruno.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 13,
+      "name": "Clint",
+      "slug": "clint",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/13-clint-round.png",
+        "rectangle": "./images/13-clint.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 14,
+      "name": "Rafaela",
+      "slug": "rafaela",
+      "roles": [
+        "Support"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/14-rafaela-round.png",
+        "rectangle": "./images/14-rafaela.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 15,
+      "name": "Eudora",
+      "slug": "eudora",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/15-eudora-round.png",
+        "rectangle": "./images/15-eudora.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 16,
+      "name": "Zilong",
+      "slug": "zilong",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/16-zilong-round.png",
+        "rectangle": "./images/16-zilong.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 17,
+      "name": "Fanny",
+      "slug": "fanny",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/17-fanny-round.png",
+        "rectangle": "./images/17-fanny.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 18,
+      "name": "Layla",
+      "slug": "layla",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/18-layla-round.png",
+        "rectangle": "./images/18-layla.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 19,
+      "name": "Minotaur",
+      "slug": "minotaur",
+      "roles": [
+        "Tank",
+        "Support"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/19-minotaur-round.png",
+        "rectangle": "./images/19-minotaur.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 20,
+      "name": "Lolita",
+      "slug": "lolita",
+      "roles": [
+        "Support",
+        "Tank"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/20-lolita-round.png",
+        "rectangle": "./images/20-lolita.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 21,
+      "name": "Hayabusa",
+      "slug": "hayabusa",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/21-hayabusa-round.png",
+        "rectangle": "./images/21-hayabusa.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 22,
+      "name": "Freya",
+      "slug": "freya",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane",
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/22-freya-round.png",
+        "rectangle": "./images/22-freya.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 23,
+      "name": "Gord",
+      "slug": "gord",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/23-gord-round.png",
+        "rectangle": "./images/23-gord.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 24,
+      "name": "Natalia",
+      "slug": "natalia",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle",
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/24-natalia-round.png",
+        "rectangle": "./images/24-natalia.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 25,
+      "name": "Kagura",
+      "slug": "kagura",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/25-kagura-round.png",
+        "rectangle": "./images/25-kagura.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 26,
+      "name": "Chou",
+      "slug": "chou",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane",
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/26-chou-round.png",
+        "rectangle": "./images/26-chou.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 27,
+      "name": "Sun",
+      "slug": "sun",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane",
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/27-sun-round.png",
+        "rectangle": "./images/27-sun.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 28,
+      "name": "Alpha",
+      "slug": "alpha",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Jungle",
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/28-alpha-round.png",
+        "rectangle": "./images/28-alpha.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 29,
+      "name": "Ruby",
+      "slug": "ruby",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/29-ruby-round.png",
+        "rectangle": "./images/29-ruby.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 30,
+      "name": "Yi Sun-shin",
+      "slug": "yi-sun-shin",
+      "roles": [
+        "Assassin",
+        "Marksman"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/30-yi-sun-shin-round.png",
+        "rectangle": "./images/30-yi-sun-shin.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 31,
+      "name": "Moskov",
+      "slug": "moskov",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/31-moskov-round.png",
+        "rectangle": "./images/31-moskov.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 32,
+      "name": "Johnson",
+      "slug": "johnson",
+      "roles": [
+        "Tank",
+        "Support"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/32-johnson-round.png",
+        "rectangle": "./images/32-johnson.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 33,
+      "name": "Cyclops",
+      "slug": "cyclops",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/33-cyclops-round.png",
+        "rectangle": "./images/33-cyclops.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 34,
+      "name": "Estes",
+      "slug": "estes",
+      "roles": [
+        "Support"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/34-estes-round.png",
+        "rectangle": "./images/34-estes.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 35,
+      "name": "Hilda",
+      "slug": "hilda",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "lanes": [
+        "Roam",
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/35-hilda-round.png",
+        "rectangle": "./images/35-hilda.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 36,
+      "name": "Aurora",
+      "slug": "aurora",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/36-aurora-round.png",
+        "rectangle": "./images/36-aurora.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 37,
+      "name": "Lapu-Lapu",
+      "slug": "lapu-lapu",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/37-lapu-lapu-round.png",
+        "rectangle": "./images/37-lapu-lapu.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 38,
+      "name": "Vexana",
+      "slug": "vexana",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/38-vexana-round.png",
+        "rectangle": "./images/38-vexana.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 39,
+      "name": "Roger",
+      "slug": "roger",
+      "roles": [
+        "Fighter",
+        "Marksman"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/39-roger-round.png",
+        "rectangle": "./images/39-roger.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 40,
+      "name": "Karrie",
+      "slug": "karrie",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/40-karrie-round.png",
+        "rectangle": "./images/40-karrie.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 41,
+      "name": "Gatotkaca",
+      "slug": "gatotkaca",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "lanes": [
+        "Roam",
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/41-gatotkaca-round.png",
+        "rectangle": "./images/41-gatotkaca.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 42,
+      "name": "Harley",
+      "slug": "harley",
+      "roles": [
+        "Assassin",
+        "Mage"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/42-harley-round.png",
+        "rectangle": "./images/42-harley.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 43,
+      "name": "Irithel",
+      "slug": "irithel",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/43-irithel-round.png",
+        "rectangle": "./images/43-irithel.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 44,
+      "name": "Grock",
+      "slug": "grock",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/44-grock-round.png",
+        "rectangle": "./images/44-grock.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 45,
+      "name": "Argus",
+      "slug": "argus",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/45-argus-round.png",
+        "rectangle": "./images/45-argus.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 46,
+      "name": "Odette",
+      "slug": "odette",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/46-odette-round.png",
+        "rectangle": "./images/46-odette.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 47,
+      "name": "Lancelot",
+      "slug": "lancelot",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/47-lancelot-round.png",
+        "rectangle": "./images/47-lancelot.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 48,
+      "name": "Diggie",
+      "slug": "diggie",
+      "roles": [
+        "Support"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/48-diggie-round.png",
+        "rectangle": "./images/48-diggie.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 49,
+      "name": "Hylos",
+      "slug": "hylos",
+      "roles": [
+        "Tank"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/49-hylos-round.png",
+        "rectangle": "./images/49-hylos.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 50,
+      "name": "Zhask",
+      "slug": "zhask",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/50-zhask-round.png",
+        "rectangle": "./images/50-zhask.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 51,
+      "name": "Helcurt",
+      "slug": "helcurt",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/51-helcurt-round.png",
+        "rectangle": "./images/51-helcurt.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 52,
+      "name": "Pharsa",
+      "slug": "pharsa",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/52-pharsa-round.png",
+        "rectangle": "./images/52-pharsa.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 53,
+      "name": "Lesley",
+      "slug": "lesley",
+      "roles": [
+        "Marksman",
+        "Assassin"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/53-lesley-round.png",
+        "rectangle": "./images/53-lesley.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 54,
+      "name": "Jawhead",
+      "slug": "jawhead",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Roam",
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/54-jawhead-round.png",
+        "rectangle": "./images/54-jawhead.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 55,
+      "name": "Angela",
+      "slug": "angela",
+      "roles": [
+        "Support"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/55-angela-round.png",
+        "rectangle": "./images/55-angela.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 56,
+      "name": "Gusion",
+      "slug": "gusion",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/56-gusion-round.png",
+        "rectangle": "./images/56-gusion.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 57,
+      "name": "Valir",
+      "slug": "valir",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/57-valir-round.png",
+        "rectangle": "./images/57-valir.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 58,
+      "name": "Martis",
+      "slug": "martis",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/58-martis-round.png",
+        "rectangle": "./images/58-martis.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 59,
+      "name": "Uranus",
+      "slug": "uranus",
+      "roles": [
+        "Tank"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/59-uranus-round.png",
+        "rectangle": "./images/59-uranus.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 60,
+      "name": "Hanabi",
+      "slug": "hanabi",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/60-hanabi-round.png",
+        "rectangle": "./images/60-hanabi.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 61,
+      "name": "Chang'e",
+      "slug": "chang-e",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/61-chang-e-round.png",
+        "rectangle": "./images/61-chang-e.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 62,
+      "name": "Kaja",
+      "slug": "kaja",
+      "roles": [
+        "Support",
+        "Fighter"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/62-kaja-round.png",
+        "rectangle": "./images/62-kaja.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 63,
+      "name": "Selena",
+      "slug": "selena",
+      "roles": [
+        "Assassin",
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane",
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/63-selena-round.png",
+        "rectangle": "./images/63-selena.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 64,
+      "name": "Aldous",
+      "slug": "aldous",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/64-aldous-round.png",
+        "rectangle": "./images/64-aldous.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 65,
+      "name": "Claude",
+      "slug": "claude",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/65-claude-round.png",
+        "rectangle": "./images/65-claude.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 66,
+      "name": "Vale",
+      "slug": "vale",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/66-vale-round.png",
+        "rectangle": "./images/66-vale.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 67,
+      "name": "Leomord",
+      "slug": "leomord",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/67-leomord-round.png",
+        "rectangle": "./images/67-leomord.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 68,
+      "name": "Lunox",
+      "slug": "lunox",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/68-lunox-round.png",
+        "rectangle": "./images/68-lunox.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 69,
+      "name": "Hanzo",
+      "slug": "hanzo",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/69-hanzo-round.png",
+        "rectangle": "./images/69-hanzo.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 70,
+      "name": "Belerick",
+      "slug": "belerick",
+      "roles": [
+        "Tank"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/70-belerick-round.png",
+        "rectangle": "./images/70-belerick.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 71,
+      "name": "Kimmy",
+      "slug": "kimmy",
+      "roles": [
+        "Marksman",
+        "Mage"
+      ],
+      "lanes": [
+        "Gold Lane",
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/71-kimmy-round.png",
+        "rectangle": "./images/71-kimmy.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 72,
+      "name": "Thamuz",
+      "slug": "thamuz",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/72-thamuz-round.png",
+        "rectangle": "./images/72-thamuz.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 73,
+      "name": "Harith",
+      "slug": "harith",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Gold Lane",
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/73-harith-round.png",
+        "rectangle": "./images/73-harith.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 74,
+      "name": "Minsitthar",
+      "slug": "minsitthar",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane",
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/74-minsitthar-round.png",
+        "rectangle": "./images/74-minsitthar.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 75,
+      "name": "Kadita",
+      "slug": "kadita",
+      "roles": [
+        "Mage",
+        "Assassin"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/75-kadita-round.png",
+        "rectangle": "./images/75-kadita.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 76,
+      "name": "Faramis",
+      "slug": "faramis",
+      "roles": [
+        "Support",
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/76-faramis-round.png",
+        "rectangle": "./images/76-faramis.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 77,
+      "name": "Badang",
+      "slug": "badang",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/77-badang-round.png",
+        "rectangle": "./images/77-badang.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 78,
+      "name": "Khufra",
+      "slug": "khufra",
+      "roles": [
+        "Tank"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/78-khufra-round.png",
+        "rectangle": "./images/78-khufra.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 79,
+      "name": "Granger",
+      "slug": "granger",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/79-granger-round.png",
+        "rectangle": "./images/79-granger.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 80,
+      "name": "Guinevere",
+      "slug": "guinevere",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/80-guinevere-round.png",
+        "rectangle": "./images/80-guinevere.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 81,
+      "name": "Esmeralda",
+      "slug": "esmeralda",
+      "roles": [
+        "Tank",
+        "Mage"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/81-esmeralda-round.png",
+        "rectangle": "./images/81-esmeralda.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 82,
+      "name": "Terizla",
+      "slug": "terizla",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/82-terizla-round.png",
+        "rectangle": "./images/82-terizla.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 83,
+      "name": "X.Borg",
+      "slug": "x-borg",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/83-x-borg-round.png",
+        "rectangle": "./images/83-x-borg.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 84,
+      "name": "Ling",
+      "slug": "ling",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/84-ling-round.png",
+        "rectangle": "./images/84-ling.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 85,
+      "name": "Dyrroth",
+      "slug": "dyrroth",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane",
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/85-dyrroth-round.png",
+        "rectangle": "./images/85-dyrroth.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 86,
+      "name": "Lylia",
+      "slug": "lylia",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/86-lylia-round.png",
+        "rectangle": "./images/86-lylia.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 87,
+      "name": "Baxia",
+      "slug": "baxia",
+      "roles": [
+        "Tank"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/87-baxia-round.png",
+        "rectangle": "./images/87-baxia.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 88,
+      "name": "Masha",
+      "slug": "masha",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/88-masha-round.png",
+        "rectangle": "./images/88-masha.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 89,
+      "name": "Wanwan",
+      "slug": "wanwan",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/89-wanwan-round.png",
+        "rectangle": "./images/89-wanwan.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 90,
+      "name": "Silvanna",
+      "slug": "silvanna",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/90-silvanna-round.png",
+        "rectangle": "./images/90-silvanna.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 91,
+      "name": "Cecilion",
+      "slug": "cecilion",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/91-cecilion-round.png",
+        "rectangle": "./images/91-cecilion.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 92,
+      "name": "Carmilla",
+      "slug": "carmilla",
+      "roles": [
+        "Support",
+        "Tank"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/92-carmilla-round.png",
+        "rectangle": "./images/92-carmilla.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 93,
+      "name": "Atlas",
+      "slug": "atlas",
+      "roles": [
+        "Tank"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/93-atlas-round.png",
+        "rectangle": "./images/93-atlas.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 94,
+      "name": "Popol and Kupa",
+      "slug": "popol-and-kupa",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Jungle",
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/94-popol-and-kupa-round.png",
+        "rectangle": "./images/94-popol-and-kupa.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 95,
+      "name": "Yu Zhong",
+      "slug": "yu-zhong",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/95-yu-zhong-round.png",
+        "rectangle": "./images/95-yu-zhong.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 96,
+      "name": "Luo Yi",
+      "slug": "luo-yi",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/96-luo-yi-round.png",
+        "rectangle": "./images/96-luo-yi.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 97,
+      "name": "Benedetta",
+      "slug": "benedetta",
+      "roles": [
+        "Assassin",
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/97-benedetta-round.png",
+        "rectangle": "./images/97-benedetta.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 98,
+      "name": "Khaleed",
+      "slug": "khaleed",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane",
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/98-khaleed-round.png",
+        "rectangle": "./images/98-khaleed.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 99,
+      "name": "Barats",
+      "slug": "barats",
+      "roles": [
+        "Tank",
+        "Fighter"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/99-barats-round.png",
+        "rectangle": "./images/99-barats.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 100,
+      "name": "Brody",
+      "slug": "brody",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/100-brody-round.png",
+        "rectangle": "./images/100-brody.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 101,
+      "name": "Yve",
+      "slug": "yve",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/101-yve-round.png",
+        "rectangle": "./images/101-yve.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 102,
+      "name": "Mathilda",
+      "slug": "mathilda",
+      "roles": [
+        "Support",
+        "Assassin"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/102-mathilda-round.png",
+        "rectangle": "./images/102-mathilda.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 103,
+      "name": "Paquito",
+      "slug": "paquito",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/103-paquito-round.png",
+        "rectangle": "./images/103-paquito.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 104,
+      "name": "Gloo",
+      "slug": "gloo",
+      "roles": [
+        "Tank"
+      ],
+      "lanes": [
+        "Exp Lane",
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/104-gloo-round.png",
+        "rectangle": "./images/104-gloo.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 105,
+      "name": "Beatrix",
+      "slug": "beatrix",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/105-beatrix-round.png",
+        "rectangle": "./images/105-beatrix.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 106,
+      "name": "Phoveus",
+      "slug": "phoveus",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/106-phoveus-round.png",
+        "rectangle": "./images/106-phoveus.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 107,
+      "name": "Natan",
+      "slug": "natan",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/107-natan-round.png",
+        "rectangle": "./images/107-natan.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 108,
+      "name": "Aulus",
+      "slug": "aulus",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/108-aulus-round.png",
+        "rectangle": "./images/108-aulus.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 109,
+      "name": "Aamon",
+      "slug": "aamon",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/109-aamon-round.png",
+        "rectangle": "./images/109-aamon.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 110,
+      "name": "Valentina",
+      "slug": "valentina",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/110-valentina-round.png",
+        "rectangle": "./images/110-valentina.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 111,
+      "name": "Edith",
+      "slug": "edith",
+      "roles": [
+        "Tank",
+        "Marksman"
+      ],
+      "lanes": [
+        "Exp Lane",
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/111-edith-round.png",
+        "rectangle": "./images/111-edith.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 112,
+      "name": "Floryn",
+      "slug": "floryn",
+      "roles": [
+        "Support"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/112-floryn-round.png",
+        "rectangle": "./images/112-floryn.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 113,
+      "name": "Yin",
+      "slug": "yin",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle",
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/113-yin-round.png",
+        "rectangle": "./images/113-yin.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 114,
+      "name": "Melissa",
+      "slug": "melissa",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/114-melissa-round.png",
+        "rectangle": "./images/114-melissa.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 115,
+      "name": "Xavier",
+      "slug": "xavier",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/115-xavier-round.png",
+        "rectangle": "./images/115-xavier.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 116,
+      "name": "Julian",
+      "slug": "julian",
+      "roles": [
+        "Assassin",
+        "Fighter"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/116-julian-round.png",
+        "rectangle": "./images/116-julian.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 117,
+      "name": "Fredrinn",
+      "slug": "fredrinn",
+      "roles": [
+        "Fighter",
+        "Tank"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/117-fredrinn-round.png",
+        "rectangle": "./images/117-fredrinn.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 118,
+      "name": "Joy",
+      "slug": "joy",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/118-joy-round.png",
+        "rectangle": "./images/118-joy.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 119,
+      "name": "Novaria",
+      "slug": "novaria",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/119-novaria-round.png",
+        "rectangle": "./images/119-novaria.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 120,
+      "name": "Arlott",
+      "slug": "arlott",
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/120-arlott-round.png",
+        "rectangle": "./images/120-arlott.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 121,
+      "name": "Ixia",
+      "slug": "ixia",
+      "roles": [
+        "Marksman"
+      ],
+      "lanes": [
+        "Gold Lane"
+      ],
+      "images": {
+        "round": "./images/121-ixia-round.png",
+        "rectangle": "./images/121-ixia.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 122,
+      "name": "Nolan",
+      "slug": "nolan",
+      "roles": [
+        "Assassin"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/122-nolan-round.png",
+        "rectangle": "./images/122-nolan.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 123,
+      "name": "Cici",
+      "slug": "cici",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane"
+      ],
+      "images": {
+        "round": "./images/123-cici-round.png",
+        "rectangle": "./images/123-cici.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 124,
+      "name": "Chip",
+      "slug": "chip",
+      "roles": [
+        "Support",
+        "Tank"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/124-chip-round.png",
+        "rectangle": "./images/124-chip.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 125,
+      "name": "Zhuxin",
+      "slug": "zhuxin",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/125-zhuxin-round.png",
+        "rectangle": "./images/125-zhuxin.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 126,
+      "name": "Suyou",
+      "slug": "suyou",
+      "roles": [
+        "Assassin",
+        "Fighter"
+      ],
+      "lanes": [
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/126-suyou-round.png",
+        "rectangle": "./images/126-suyou.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 127,
+      "name": "Lukas",
+      "slug": "lukas",
+      "roles": [
+        "Fighter"
+      ],
+      "lanes": [
+        "Exp Lane",
+        "Jungle"
+      ],
+      "images": {
+        "round": "./images/127-lukas-round.png",
+        "rectangle": "./images/127-lukas.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 128,
+      "name": "Kalea",
+      "slug": "kalea",
+      "roles": [
+        "Support",
+        "Fighter"
+      ],
+      "lanes": [
+        "Roam"
+      ],
+      "images": {
+        "round": "./images/128-kalea-round.png",
+        "rectangle": "./images/128-kalea.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 129,
+      "name": "Zetian",
+      "slug": "zetian",
+      "roles": [
+        "Mage"
+      ],
+      "lanes": [
+        "Mid Lane"
+      ],
+      "images": {
+        "round": "./images/129-zetian-round.png",
+        "rectangle": "./images/129-zetian.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 130,
+      "name": "Obsidia",
+      "slug": "obsidia",
+      "roles": [],
+      "lanes": [],
+      "images": {
+        "round": "./images/130-obsidia-round.png",
+        "rectangle": "./images/130-obsidia.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 131,
+      "name": "Sora",
+      "slug": "sora",
+      "roles": [],
+      "lanes": [],
+      "images": {
+        "round": "./images/131-sora-round.png",
+        "rectangle": "./images/131-sora.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 132,
+      "name": "Marcel",
+      "slug": "marcel",
+      "roles": [],
+      "lanes": [],
+      "images": {
+        "round": "./images/132-marcel-round.png",
+        "rectangle": "./images/132-marcel.png"
+      },
+      "status": "locked"
+    },
+    {
+      "id": 133,
+      "name": "Hirara",
+      "slug": "hirara",
+      "roles": [],
+      "lanes": [],
+      "images": {
+        "round": "./images/133-hirara-round.png",
+        "rectangle": "./images/133-hirara.png"
+      },
+      "status": "locked"
+    }
+  ]
+}

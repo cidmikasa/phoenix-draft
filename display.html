@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phoenix Draft — Display</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/phoenix.css">
+</head>
+<body>
+<div class="stage" id="stage">
+
+  <!-- PRE-DRAFT -->
+  <section class="view view-pre active">
+    <div class="half half-a"><div class="crest" id="preCrestA">A</div><div class="pre-name" id="preNameA">TEAM ALPHA</div></div>
+    <div class="half half-b"><div class="crest" id="preCrestB">B</div><div class="pre-name" id="preNameB">TEAM BRAVO</div></div>
+    <div class="bolt"></div>
+    <div class="vs">VS</div>
+  </section>
+
+  <!-- INTRO — "DRAFT" + "PHASE" collision. Plays as a fixed overlay on top of everything
+       (render.js adds .playing on pre → draft). -->
+  <section class="view view-intro" id="viewIntro" aria-hidden="true">
+    <div class="intro-bar intro-bar-top"></div>
+    <div class="intro-bar intro-bar-bottom"></div>
+    <div class="intro-word intro-draft"><span>DRAFT</span></div>
+    <div class="intro-word intro-phase"><span>PHASE</span></div>
+    <div class="intro-flash"></div>
+  </section>
+
+  <!-- DRAFT -->
+  <section class="view view-draft">
+    <div class="top">
+      <div class="cam cam-a" id="camA"><div class="cam-in"><img id="camImgA" alt=""><span class="cam-label" id="camLabelA"></span></div></div>
+      <div class="logo"><div class="logo-in"><img id="broadcastLogoImg" alt=""><span id="broadcastLabel">LIVE DRAFT</span></div></div>
+      <div class="cam cam-b" id="camB"><div class="cam-in"><img id="camImgB" alt=""><span class="cam-label" id="camLabelB"></span></div></div>
+    </div>
+
+    <div class="mid">
+      <div class="tag tag-a" id="teamTagA"></div>
+      <div class="bans" id="bansA"></div>
+      <div class="mid-gap"></div>
+      <div class="bans" id="bansB"></div>
+      <div class="tag tag-b" id="teamTagB"></div>
+    </div>
+
+    <div class="board">
+      <div class="slots" id="slotsA"></div>
+      <div class="console">
+        <div class="console-format" id="consoleFormat">BEST OF 3</div>
+        <div class="scores"><div class="dots" id="consoleScoreA"></div><div class="dots" id="consoleScoreB"></div></div>
+        <div class="console-timer" id="timer">00:50</div>
+        <div class="console-arrows" id="consoleArrows"><i class="arrow"></i><i class="arrow"></i><i class="arrow"></i><i class="arrow"></i><i class="arrow"></i></div>
+        <div class="console-phase" id="phase"></div>
+      </div>
+      <div class="slots" id="slotsB"></div>
+    </div>
+
+    <div class="sponsors" id="sponsorStrip"></div>
+
+    <!-- Big hero pick/ban card — filled by window.showHeroOverlay() in render.js -->
+    <div class="hero-overlay" id="heroOverlay"></div>
+  </section>
+
+  <!-- COMPLETE -->
+  <section class="view view-complete">
+    <div class="complete-vs">VS</div>
+    <div class="lineup" id="lineupA"></div>
+    <div class="lineup" id="lineupB"></div>
+  </section>
+
+</div>
+
+<script src="js/ipc-sync.js"></script>
+<script src="js/state.js"></script>
+<script src="js/render.js"></script>
+<script>
+  // Fit the 1920x1080 stage to any window / OBS browser source
+  (function () {
+    const stage = document.getElementById('stage');
+    function fit() {
+      const s = Math.min(innerWidth / 1920, innerHeight / 1080);
+      stage.style.transform = 'translate(-50%,-50%) scale(' + s + ')';
+    }
+    addEventListener('resize', fit); fit();
+  })();
+
+  // Bootstrap: load heroes, render, listen, poll
+  (function () {
+    let current = null;
+
+    fetch('assets/heroes.json').then(r => r.json())
+      .then(d => { window.heroData = Array.isArray(d) ? d : (d.heroes || []); })
+      .catch(() => { window.heroData = window.heroData || []; })
+      .finally(() => {
+        current = loadDraftState();
+        renderDisplay(current);
+
+        // Storage event (fires between tabs)
+        onDraftStateChange(s => {
+          current = s;
+          renderDisplay(s);
+          console.log('🔄 Display refreshed via storage event. view =', current.view);
+        });
+
+        // 🔥 Aggressive polling — always re-renders
+        setInterval(() => {
+          try {
+            const fresh = loadDraftState();
+            current = fresh;
+            renderDisplay(fresh);
+          } catch (e) {}
+        }, 400);
+
+        // IPC listener for Electron mode
+if (window.listenForStateUpdate) {
+  window.listenForStateUpdate((newState) => {
+    current = newState;
+    renderDisplay(newState);
+  });
+}
+
+        // Timer tick — smooth countdown
+        setInterval(() => { if (current) renderTimer(current); }, 250);
+      });
+  })();
+</script>
+</body>
+</html>
