@@ -286,11 +286,15 @@ if (btnReset) btnReset.addEventListener('click', () => {
 /* ——— HERO LOAD ——— */
 async function loadHeroes() {
   try {
-    const response = await fetch('assets/heroes.json');
-    const data = await response.json();
-    if (Array.isArray(data)) heroData = data;
-    else if (data.heroes && Array.isArray(data.heroes)) heroData = data.heroes;
-    else { console.error('Unexpected heroes format:', data); heroData = []; }
+    // Use cache-aware loader (userData → localStorage → bundled)
+    if (window.loadHeroesWithCache) {
+      heroData = await window.loadHeroesWithCache();
+    } else {
+      // Fallback: plain fetch
+      const response = await fetch('assets/heroes.json');
+      const data = await response.json();
+      heroData = Array.isArray(data) ? data : (data.heroes || []);
+    }
     console.log(`🔥 Loaded ${heroData.length} heroes`);
     window.heroData = heroData;
     renderHeroButtons(heroData);
@@ -506,5 +510,62 @@ document.addEventListener('keydown', (e) => {
 });
 
 loadHeroes().then(() => { setupHeroSearch(); });
+
+/* ——— HERO UPDATE CHECK ——— */
+const btnCheckUpdates = $('btnCheckUpdates');
+const updateStatus = $('updateStatus');
+
+function setUpdateStatus(text, color) {
+  if (!updateStatus) return;
+  updateStatus.textContent = text;
+  updateStatus.style.color = color || '#a06050';
+}
+
+if (btnCheckUpdates) btnCheckUpdates.addEventListener('click', async () => {
+  if (!window.checkForHeroUpdates) {
+    setUpdateStatus('Updater not available', '#ef5350');
+    return;
+  }
+  btnCheckUpdates.disabled = true;
+  setUpdateStatus('Checking...', '#f5c842');
+
+  const result = await window.checkForHeroUpdates({
+    silent: false,
+    onStatus: (s) => {
+      if (s === 'checking') setUpdateStatus('Checking remote...', '#f5c842');
+      else if (s === 'downloading') setUpdateStatus('Downloading new heroes...', '#2de2ff');
+      else if (s === 'done') setUpdateStatus('Update complete', '#4cd964');
+      else if (s === 'error') setUpdateStatus('Update failed', '#ef5350');
+    }
+  });
+
+  btnCheckUpdates.disabled = false;
+
+  if (result.updated) {
+    setUpdateStatus(`✅ Updated to v${result.version} (${result.heroCount} heroes)`, '#4cd964');
+    // Reload the hero grid with new heroes
+    heroData = window.heroData || heroData;
+    renderHeroButtons(heroData);
+    populateForm();
+  } else if (result.error) {
+    setUpdateStatus('❌ ' + result.error, '#ef5350');
+  } else {
+    setUpdateStatus(`✓ Already up to date (v${result.version})`, '#4cd964');
+  }
+});
+
+// Silent auto-check on launch
+setTimeout(() => {
+  if (window.checkForHeroUpdates) {
+    window.checkForHeroUpdates({ silent: true }).then((result) => {
+      if (result.updated) {
+        console.log(`✅ Auto-updated heroes to v${result.version}`);
+        heroData = window.heroData || heroData;
+        renderHeroButtons(heroData);
+        populateForm();
+      }
+    });
+  }
+}, 3000);
 
 console.log('🔥 Phoenix Draft — Control Panel loaded (v11).');

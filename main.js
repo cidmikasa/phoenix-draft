@@ -149,6 +149,56 @@ ipcMain.on('toggle-control-fullscreen', () => {
   }
 });
 
+// ——— HERO DATA FILE OPERATIONS ———
+const HEROES_FILE = path.join(userDataPath, 'heroes.json');
+const VERSION_FILE = path.join(userDataPath, 'heroes-version.json');
+
+ipcMain.handle('get-heroes-path', () => {
+  return HEROES_FILE;
+});
+
+ipcMain.handle('read-local-heroes', () => {
+  try {
+    if (fs.existsSync(HEROES_FILE)) {
+      return JSON.parse(fs.readFileSync(HEROES_FILE, 'utf8'));
+    }
+  } catch (e) {
+    console.warn('Failed to read local heroes:', e);
+  }
+  return null; // null = app falls back to bundled assets/heroes.json
+});
+
+ipcMain.handle('write-local-heroes', (event, heroes) => {
+  try {
+    fs.writeFileSync(HEROES_FILE, JSON.stringify(heroes, null, 2));
+    return true;
+  } catch (e) {
+    console.error('Failed to write local heroes:', e);
+    return false;
+  }
+});
+
+ipcMain.handle('read-local-version', () => {
+  try {
+    if (fs.existsSync(VERSION_FILE)) {
+      return JSON.parse(fs.readFileSync(VERSION_FILE, 'utf8'));
+    }
+  } catch (e) {
+    console.warn('Failed to read local version:', e);
+  }
+  return null;
+});
+
+ipcMain.handle('write-local-version', (event, v) => {
+  try {
+    fs.writeFileSync(VERSION_FILE, JSON.stringify(v, null, 2));
+    return true;
+  } catch (e) {
+    console.error('Failed to write local version:', e);
+    return false;
+  }
+});
+
 // ——— APP LIFECYCLE ———
 app.whenReady().then(() => {
   createControlWindow();

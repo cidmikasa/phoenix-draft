@@ -1,25 +1,29 @@
 /**
  * ============================================================
- * PHOENIX DRAFT — PRELOAD SCRIPT
- * Safe IPC bridge between main process and renderer windows.
- * Exposes a minimal API to both control.html and display.html.
+ * PHOENIX DRAFT — PRELOAD SCRIPT v2
+ * Safe IPC bridge + userData filesystem access for heroes.
  * ============================================================
  */
 
 const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('electronAPI', {
-  // Control → Main → Display (state broadcast)
+  // ——— Cross-window state sync ———
   sendStateUpdate: (state) => ipcRenderer.send('draft-state-update', state),
-
-  // Display receives state updates
   onStateUpdate: (callback) => {
     ipcRenderer.on('draft-state-update', (event, state) => callback(state));
   },
 
-  // Toggle fullscreen on display window
+  // ——— Fullscreen ———
   toggleDisplayFullscreen: () => ipcRenderer.send('toggle-display-fullscreen'),
 
-  // Detect if running in Electron
+  // ——— Hero data (userData) ———
+  getHeroesPath:    () => ipcRenderer.invoke('get-heroes-path'),
+  readLocalHeroes:  () => ipcRenderer.invoke('read-local-heroes'),
+  writeLocalHeroes: (heroes) => ipcRenderer.invoke('write-local-heroes', heroes),
+  readLocalVersion: () => ipcRenderer.invoke('read-local-version'),
+  writeLocalVersion:(v) => ipcRenderer.invoke('write-local-version', v),
+
+  // ——— Detection flag ———
   isElectron: true
 });
